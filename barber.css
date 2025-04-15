@@ -183,8 +183,8 @@ p {
 }
 
 /* About Section */
-.about {
-    padding: 30px 20px 50px 20px;
+..about {
+    padding: 60px 20px;
     background-color: var(--primary-color);
 }
 
@@ -195,15 +195,25 @@ p {
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite quebra no mobile */
+}
+
+.about-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
 }
 
 .about-image img {
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
     padding: 5px;
 }
 
 .about-description {
+    flex: 1;
+    min-width: 300px;
     padding: 10px;
 }
 
@@ -215,6 +225,7 @@ p {
 .about-description p {
     font-size: 18px;
     text-align: justify;
+    line-height: 1.6;
 }
 
 /* Services Section */
@@ -291,7 +302,6 @@ p {
 
 .serviços {
     text-align: center;
-    margin-top: 10px;
     color: var(--primary-color);
     background-color: var(--neutrocolor2);
     font-size: 20px;
